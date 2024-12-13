@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>آکاگرام - &#x631;&#x627;&#x647;&#x646;&#x645;&#x627;</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./lib/bootstrap-rtl/dist/css/bootstrap-rtl.min.css" />
+    <link rel="stylesheet" href="./lib/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="./css/site.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <style>
+        p {
+            text-align: justify;
+        }
+
+        img {
+            max-width: 250px;
+            display: block;
+            margin: 20px auto 50px;
+        }
+    </style>
+
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <header>
+        <nav
+            class="navbar navbar-expand-sm navbar-toggleable-sm l-bg-primary border-bottom box-shadow mb-3 unselectable">
+            <div class="container header-container">
+                <a class="navbar-brand" href="/">آکاگرام</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="fa fa-bars text-white"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                    </ul>
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item ml-md-5 ml-sm-2">
+                            <a class="nav-link text-light apps-header-link" href="/apps">دانلود برنامه</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="/Identity/Account/Login?returnUrl=%2Fhelp%3F">ورود</a>
+                        </li>
+                    </ul>
+
+                    <form id="logout-form" class="form-inline d-none" action="/Identity/Account/Logout?returnUrl=%2F"
+                        method="post">
+                        <input name="__RequestVerificationToken" type="hidden"
+                            value="CfDJ8B8m7vND4X1PsICECDdOSzn7aZP5hyBcPXkvMta8b9Oo1mKSakJPMc7cg4bg3mcGYviJcplT5GP8laDrJzF_U8HUewlK3sRXPmWTYAe3n6_mWJIb7zbBYBtkGQytzCwqRb1-SGGV4b0O71G67ns0_BM" />
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container text-right">
+        <main role="main" class="py-5">
+            <div class="message alert" style="display: none;"></div>
+
+            <h1>راهنمای استفاده از آکاگرام</h1>
+
+            <a href="Hafezah-pishfarz.html">
+                <div class="box-title col-12">
+                    <h2>حافظه پیش فرض</h2>
+                </div>
+            </a>
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+            <div class="container">
+                <div>
+                    &copy; 2024 - تمامی حقوق مادی و معنوی متعلق به آکاگرام است
+                </div>
+                <div class="link-container">
+                    <a class="privacy-link" href="/privacy">حریم خصوصی</a>
+                    <a class="" href="/apps">دانلود برنامه</a>
+                </div>
+            </div>
+    </footer>
+        <script src="/lib/jquery/dist/jquery.min.js"></script>
+        
+        <script src="/lib/sweetalert/sweetalert.min.js"></script>
+        <script src="/lib/bootstrap-rtl/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="/js/grids.min.js"></script>
+        <script src="/js/site.js?v=zD5YWWeBCtGpZQqrERCkc8TvzV9AjCJlyIULOypLOD8"></script>
+        <script src="/lib/twemoji/twemoji.min.js"></script>
+        <script>
+            $ = window.$;
+            twemoji = window.twemoji;
+
+            $(document).ready(function () {
+                twemoji.parse(document.body, { "folder": "/lib/twemoji/assets/svg", "ext": ".svg", "base": "" });
+
+                var popoverPlacement = "left";
+                if (window.innerWidth < 768)
+                    popoverPlacement = "bottom";
+                $('.help-popover').popover({ trigger: "hover focus", placement: popoverPlacement, title: "راهنما" });
+
+            });
+        </script>
+        
+        <script>
+            $ = window.$;
+
+            $(function () {
+                if ('False' === 'True') {
+                    $('footer').hide();
+                    $('header nav').hide();
+                }
+            });
+        </script>
+</body>
+</html>
