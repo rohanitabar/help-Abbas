@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>آکاگرام - &#x631;&#x627;&#x647;&#x646;&#x645;&#x627;</title>
+    <title>ورود به دوره هایی که ثبت نام کردید</title>
     <!-- CSS -->
     <link rel="stylesheet" href="./lib/bootstrap-rtl/dist/css/bootstrap-rtl.min.css" />
     <link rel="stylesheet" href="./lib/fontawesome/css/all.min.css" />
@@ -79,76 +79,80 @@
         <main role="main" class="py-5">
             <div class="message alert" style="display: none;"></div>
 
-            <h1>راهنمای استفاده از آکاگرام</h1>
+            <h2 class="mb-5">ورود به دوره هایی که ثبت نام کردید</h2>
+            <p>
+                 برای ورود به دوره هایی که ثبت نام کردید و مجاز به استفاده از آن ها هستید وارد "دوره های من"شوید
+            </p>
+            <img src="/img/help/Vorod-1.jpg" />
+            <p>
+                <b>نکته:</b> درصورتی که دوره ای که ثبت نام کردید در قسمت دوره های من نباشد، احتمالا دو یا چند خط موبایل دارید. لازم است دقت کنید موقع
+                ورود به آکاگرام با شماره ای که موقع ثبت نام به استاد دوره اعلام کرده اید وارد شوید.
+            </p>
+            <img src="/img/help/Vorod-2.jpg" />
+            <p>
+                برای حل مشکل وارد "پروفایل" شده و بعد "خروج از حساب کاربری" کنید و دوباره با شماره ثبت نام شده در دوره وارد آکاگرام شوید.
+            </p>
+            <img src="/img/help/Vorod-3.jpg" />
 
-            <a href="/Vorod.html">
-                <div class="box-title col-12">
-                    <h2>ورود به دوره هایی که ثبت نام کردید</h2>
-                </div>
-            </a>
 
-            <a href="#">
-                <div class="box-title col-12">
-                    <h2>اشکال دسترسی به حافظه</h2>
-                </div>
-            </a>
-
-            <a href="#">
-                <div class="box-title col-12">
-                    <h2>اشکال در دانلود کلیپ ها</h2>
-                </div>
-            </a>
-
-            <a href="/Hafezah-pishfarz.html">
-                <div class="box-title col-12">
-                    <h2>حافظه پیش فرض</h2>
-                </div>
-            </a>
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-            <div class="container">
-                <div>
-                    &copy; 2024 - تمامی حقوق مادی و معنوی متعلق به آکاگرام است
-                </div>
-                <div class="link-container">
-                    <a class="privacy-link" href="/privacy">حریم خصوصی</a>
-                    <a class="" href="/apps">دانلود برنامه</a>
+    <div class="modal fade" id="loading-modal" tabindex="-1" role="dialog" aria-labelledby="loadingModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <h3>لطفا صبر کنید...</h3>
+
+                    <div class="ajax-loader"></div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            <div>
+                &copy; 2024 - تمامی حقوق مادی و معنوی متعلق به آکاگرام است
+            </div>
+            <div class="link-container">
+                <a class="privacy-link" href="/privacy">حریم خصوصی</a>
+                <a class="" href="/apps">دانلود برنامه</a>
+            </div>
+        </div>
     </footer>
-        <script src="/lib/jquery/dist/jquery.min.js"></script>
-        
-        <script src="/lib/sweetalert/sweetalert.min.js"></script>
-        <script src="/lib/bootstrap-rtl/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="/js/grids.min.js"></script>
-        <script src="/js/site.js?v=zD5YWWeBCtGpZQqrERCkc8TvzV9AjCJlyIULOypLOD8"></script>
-        <script src="/lib/twemoji/twemoji.min.js"></script>
-        <script>
-            $ = window.$;
-            twemoji = window.twemoji;
+            <script src="/lib/jquery/dist/jquery.min.js"></script>
+            
+            <script src="/lib/sweetalert/sweetalert.min.js"></script>
+            <script src="/lib/bootstrap-rtl/dist/js/bootstrap.bundle.min.js"></script>
+            <script src="/js/grids.min.js"></script>
+            <script src="/js/site.js?v=zD5YWWeBCtGpZQqrERCkc8TvzV9AjCJlyIULOypLOD8"></script>
+            <script src="/lib/twemoji/twemoji.min.js"></script>
+            <script>
+                $ = window.$;
+                twemoji = window.twemoji;
 
-            $(document).ready(function () {
-                twemoji.parse(document.body, { "folder": "/lib/twemoji/assets/svg", "ext": ".svg", "base": "" });
+                $(document).ready(function () {
+                    twemoji.parse(document.body, { "folder": "/lib/twemoji/assets/svg", "ext": ".svg", "base": "" });
 
-                var popoverPlacement = "left";
-                if (window.innerWidth < 768)
-                    popoverPlacement = "bottom";
-                $('.help-popover').popover({ trigger: "hover focus", placement: popoverPlacement, title: "راهنما" });
+                    var popoverPlacement = "left";
+                    if (window.innerWidth < 768)
+                        popoverPlacement = "bottom";
+                    $('.help-popover').popover({ trigger: "hover focus", placement: popoverPlacement, title: "راهنما" });
 
-            });
-        </script>
-        
-        <script>
-            $ = window.$;
+                });
+            </script>
+            
+            <script>
+                $ = window.$;
 
-            $(function () {
-                if ('False' === 'True') {
-                    $('footer').hide();
-                    $('header nav').hide();
-                }
-            });
-        </script>
+                $(function () {
+                    if ('False' === 'True') {
+                        $('footer').hide();
+                        $('header nav').hide();
+                    }
+                });
+            </script>
 </body>
+
 </html>

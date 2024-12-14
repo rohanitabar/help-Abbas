@@ -120,5 +120,37 @@
             </div>
         </div>
     </footer>
+            <script src="/lib/jquery/dist/jquery.min.js"></script>
+            
+            <script src="/lib/sweetalert/sweetalert.min.js"></script>
+            <script src="/lib/bootstrap-rtl/dist/js/bootstrap.bundle.min.js"></script>
+            <script src="/js/grids.min.js"></script>
+            <script src="/js/site.js?v=zD5YWWeBCtGpZQqrERCkc8TvzV9AjCJlyIULOypLOD8"></script>
+            <script src="/lib/twemoji/twemoji.min.js"></script>
+            <script>
+                $ = window.$;
+                twemoji = window.twemoji;
+
+                $(document).ready(function () {
+                    twemoji.parse(document.body, { "folder": "/lib/twemoji/assets/svg", "ext": ".svg", "base": "" });
+
+                    var popoverPlacement = "left";
+                    if (window.innerWidth < 768)
+                        popoverPlacement = "bottom";
+                    $('.help-popover').popover({ trigger: "hover focus", placement: popoverPlacement, title: "راهنما" });
+
+                });
+            </script>
+            
+            <script>
+                $ = window.$;
+
+                $(function () {
+                    if ('False' === 'True') {
+                        $('footer').hide();
+                        $('header nav').hide();
+                    }
+                });
+            </script>
 </body>
 </html>
