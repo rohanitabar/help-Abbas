@@ -19,6 +19,8 @@
             max-width: 250px;
             display: block;
             margin: 20px auto 50px;
+            border-radius: 10px;
+            box-shadow: 3px 4px 10px 0px #969696;
         }
     </style>
 
@@ -42,7 +44,7 @@
     <meta name="theme-color" content="#ffffff">
 </head>
 
-<body>
+<body >
     <header>
         <nav
             class="navbar navbar-expand-sm navbar-toggleable-sm l-bg-primary border-bottom box-shadow mb-3 unselectable">
@@ -75,7 +77,7 @@
             </div>
         </nav>
     </header>
-    <div class="container text-right">
+    <div class="container text-right" id="boxes">
         <main role="main" class="py-5">
             <div class="message alert" style="display: none;"></div>
 
@@ -87,7 +89,7 @@
                 </div>
             </a>
 
-            <a href="/ErrorStorage.html">
+            <a href="#Error storage" id="Error-box">
                 <div class="box-title col-12">
                     <h2>اشکال دسترسی به حافظه</h2>
                 </div>
@@ -106,7 +108,9 @@
             </a>
         </main>
     </div>
+        <div class="content py-1" id="Error storage">
 
+        </div>
     <footer class="border-top footer text-muted">
             <div class="container">
                 <div>
@@ -125,6 +129,7 @@
         <script src="/js/grids.min.js"></script>
         <script src="/js/site.js?v=zD5YWWeBCtGpZQqrERCkc8TvzV9AjCJlyIULOypLOD8"></script>
         <script src="/lib/twemoji/twemoji.min.js"></script>
+        <script src="/js/app.js"></script>
         <script>
             $ = window.$;
             twemoji = window.twemoji;
