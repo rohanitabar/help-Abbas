@@ -50,7 +50,7 @@ vorodBox.addEventListener('click', () => {
         <img src="/img/help/Vorod-3.jpg" />  
     `;  
     
-    showContent(VorodBoxContent);  
+    showContent(VorodBoxContent,{ id: 'Vorod Box' });  
 });  
 
 downloadBox.addEventListener('click', () => {  
@@ -68,7 +68,7 @@ downloadBox.addEventListener('click', () => {
         <p><b>نکته: </b>اگر به صورت همزمان تعداد زیادی کلیپ را برای دانلود بزنید، امکان ایجاد کندی وجود دارد.</p>  
     `;  
     
-    showContent(DownloadBoxContent);  
+    showContent(DownloadBoxContent,{ id: 'Download Box' });  
 });  
 
 hafezehBox.addEventListener('click', () => {  
@@ -97,7 +97,7 @@ hafezehBox.addEventListener('click', () => {
         <img src="./img/help/pishfarz-3.jpg" />  
     `;  
     
-    showContent(HafezehBoxContent);  
+    showContent(HafezehBoxContent,{ id: 'Hafezeh Box' });  
 });  
  
 window.onpopstate = function(event) {  
