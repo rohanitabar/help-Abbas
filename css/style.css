@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+h1,h2{
+    -webkit-user-select: none;
+    user-select: none;
+}
 
 .box-title{
     width: 100%;
@@ -42,8 +46,4 @@ img {
     margin: 20px auto 50px;
     border-radius: 20px;
     box-shadow: 3px 4px 10px 0px #969696;
-}
-
-footer{
-    margin-top: 20px;
 }
